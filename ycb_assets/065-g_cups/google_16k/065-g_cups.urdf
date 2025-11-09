@@ -1,22 +1,39 @@
 <?xml version="1.0"?>
 <robot name="065-g_cups">
-  <link name="065-g_cups">
+  <!-- base_link 的原点位于模型在Z轴上的投影中心 -->
+  <link name="base_link">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <!-- 惯性参考系的原点是相对于 link 原点的。
+           由于 link 原点在 (cx, cy, 0)，而质心在 (cx, cy, cz)，
+           因此惯性原点需要向上平移 cz。 -->
+      <origin xyz="0 0 0.034209" rpy="0 0 0"/>
       <mass value="0.1"/> 
+      <!-- TODO: 更精确的惯性张量可以从 trimesh.mesh.moment_inertia 计算 -->
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
     </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <!-- 将模型的几何中心在X和Y方向上对齐到 link 的原点 -->
+      <origin xyz="-0.014003 -0.028065 0.000000" rpy="0 0 0"/>
       <geometry>
         <mesh filename="textured.obj"/>
       </geometry>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="-0.014003 -0.028065 0.000000" rpy="0 0 0"/>
       <geometry>
         <mesh filename="textured_vhacd.obj"/>
       </geometry>
     </collision>
   </link>
+
+  <!-- 这个 link 代表了模型真正的3D几何中心 (质心) -->
+  <link name="center_of_mass"/>
+
+  <joint name="base_to_com" type="fixed">
+    <parent link="base_link"/>
+    <child link="center_of_mass"/>
+    <!-- 这个 joint 将 center_of_mass link 放置在相对于 base_link 的 (0, 0, cz) 位置 -->
+    <origin xyz="0 0 0.034209" rpy="0 0 0"/>
+  </joint>
+
 </robot>

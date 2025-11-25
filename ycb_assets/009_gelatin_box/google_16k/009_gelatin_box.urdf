@@ -3,8 +3,8 @@
   
   <link name="base_link">
     <inertial>
-      <origin xyz="0.000000 0.000000 0.013958" rpy="0 0 0"/>
-      <mass value="0.1"/>
+      <origin xyz="0.000000 -0.000000 0.013958" rpy="0 0 0"/>
+      <mass value="0.097"/>
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
     </inertial>
     <visual>
@@ -28,13 +28,13 @@
   <joint name="base_to_com" type="fixed">
     <parent link="base_link"/>
     <child link="center_of_mass"/>
-    <origin xyz="0.000000 0.000000 0.013958" rpy="0 0 0"/>
+    <origin xyz="0.000000 -0.000000 0.013958" rpy="0 0 0"/>
   </joint>
 
   <joint name="base_to_obb" type="fixed">
     <parent link="base_link"/>
     <child link="obb_center"/>
-    <origin xyz="-0.000114 -0.000203 0.014422" rpy="0 0 0"/>
+    <origin xyz="-0.000123 -0.000203 0.014372" rpy="0 0 0"/>
   </joint>
 
 </robot>

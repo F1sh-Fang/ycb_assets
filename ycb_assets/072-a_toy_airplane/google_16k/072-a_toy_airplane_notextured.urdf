@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="072-a_toy_airplane">
+  
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.087869" rpy="0 0 0"/>
+      <mass value="0.57"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.021208 -0.041240 0.000000" rpy="0.000000 -0.000000 0.433845"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.021208 -0.041240 0.000000" rpy="0.000000 -0.000000 0.433845"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="center_of_mass"/>
+
+  <link name="obb_center"/>
+
+  <joint name="base_to_com" type="fixed">
+    <parent link="base_link"/>
+    <child link="center_of_mass"/>
+    <origin xyz="0.000000 0.000000 0.087869" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_to_obb" type="fixed">
+    <parent link="base_link"/>
+    <child link="obb_center"/>
+    <origin xyz="-0.014027 -0.018231 0.078279" rpy="0 0 0"/>
+  </joint>
+
+</robot>

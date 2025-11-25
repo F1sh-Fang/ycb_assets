@@ -1,12 +1,21 @@
 import os
 import trimesh
 import numpy as np
+import json
 
 # --- 配置区域 ---
 BASE_YCB_PATH = "ycb_assets"
-VISUAL_MESH_FILENAME = "textured.obj"
+NO_TEXTURE_MATERIAL = False
+
+if NO_TEXTURE_MATERIAL: 
+  VISUAL_MESH_FILENAME = "textured_vhacd.obj"
+else:
+  VISUAL_MESH_FILENAME = "textured.obj"
 COLLISION_MESH_FILENAME = "textured_vhacd.obj"
 OUTPUT_NPZ_FILE = "ycb_obb_extents.npz"
+
+YCB_MASS_JSON = "ycb_mass.json"
+
 # --- 配置结束 ---
 
 # URDF模板
@@ -16,7 +25,7 @@ URDF_TEMPLATE_BASE_ROOT = """<?xml version="1.0"?>
   <link name="base_link">
     <inertial>
       <origin xyz="{com_origin_in_base_str}" rpy="0 0 0"/>
-      <mass value="0.1"/>
+      <mass value="{mass_value}"/>
       <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
     </inertial>
     <visual>
@@ -100,6 +109,7 @@ def generate_urdf_files_final():
         return
 
     all_obb_extents = {}
+    ycb_mass_data = json.load(open(YCB_MASS_JSON, 'r'))
 
     object_folders = sorted([d for d in os.listdir(BASE_YCB_PATH) if os.path.isdir(os.path.join(BASE_YCB_PATH, d))])
     
@@ -119,6 +129,15 @@ def generate_urdf_files_final():
             print(f"  -> 警告: 碰撞模型不存在，已跳过。")
             continue
         
+        mass_value = ycb_mass_data.get(object_name, "100")
+        if mass_value != "100":
+            mass_value = mass_value["mass"].replace("g", "")
+        try:
+            mass_value = float(mass_value) / 1000.0  # Convert grams to kilograms
+            print(f"  -> {object_name} 质量: {mass_value} kg")
+        except ValueError:
+            mass_value = 0.1  # Default mass if conversion fails
+
         try:
             mesh = trimesh.load(collision_mesh_path, force='mesh', process=False)
         except Exception as e:
@@ -163,9 +182,14 @@ def generate_urdf_files_final():
             obb_origin_in_base_str=obb_origin_in_base_str,
             visual_origin_xyz_str=visual_origin_xyz_str,
             visual_origin_rpy_str=visual_origin_rpy_str,
+            mass_value=mass_value
         )
         
-        output_urdf_path = os.path.join(target_dir, f"{object_name}.urdf")
+        if NO_TEXTURE_MATERIAL:
+          output_urdf_path = os.path.join(target_dir, f"{object_name}_notextured.urdf")
+        else:
+          output_urdf_path = os.path.join(target_dir, f"{object_name}.urdf")
+
         try:
             with open(output_urdf_path, 'w') as f:
                 f.write(urdf_content)
@@ -173,6 +197,7 @@ def generate_urdf_files_final():
         except IOError as e:
             print(f"  -> 错误: 无法写入文件。原因: {e}")
 
+    return 0
     if all_obb_extents:
         try:
             np.savez_compressed(OUTPUT_NPZ_FILE, **all_obb_extents)

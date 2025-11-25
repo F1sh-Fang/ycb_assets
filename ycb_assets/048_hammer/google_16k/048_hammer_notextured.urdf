@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="048_hammer">
+  
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.015792" rpy="0 0 0"/>
+      <mass value="0.665"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.037370 -0.015852 0.000000" rpy="0.000000 -0.000000 -0.233010"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.037370 -0.015852 0.000000" rpy="0.000000 -0.000000 -0.233010"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="center_of_mass"/>
+
+  <link name="obb_center"/>
+
+  <joint name="base_to_com" type="fixed">
+    <parent link="base_link"/>
+    <child link="center_of_mass"/>
+    <origin xyz="0.000000 0.000000 0.015792" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_to_obb" type="fixed">
+    <parent link="base_link"/>
+    <child link="obb_center"/>
+    <origin xyz="-0.014274 -0.037407 0.014688" rpy="0 0 0"/>
+  </joint>
+
+</robot>

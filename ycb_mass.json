@@ -1,0 +1,618 @@
+{
+  "001_chips_can": {
+    "original_id": 8,
+    "class": "Food Items",
+    "object_name": "Pringles Chips can",
+    "mass": "205g",
+    "dimensions_mm": "75 x 250"
+  },
+  "002_master_chef_can": {
+    "original_id": 6,
+    "class": "Food Items",
+    "object_name": "Master Chef Coffee can",
+    "mass": "414g",
+    "dimensions_mm": "102 x 139"
+  },
+  "003_cracker_box": {
+    "original_id": 1,
+    "class": "Food Items",
+    "object_name": "Cheez-it Cracker box",
+    "mass": "411g",
+    "dimensions_mm": "60 x 158 x 210"
+  },
+  "004_sugar_box": {
+    "original_id": 2,
+    "class": "Food Items",
+    "object_name": "Domino Sugar box",
+    "mass": "514g",
+    "dimensions_mm": "38 x 89 x 175"
+  },
+  "005_tomato_soup_can": {
+    "original_id": 10,
+    "class": "Food Items",
+    "object_name": "Tomato Soup can",
+    "mass": "349g",
+    "dimensions_mm": "66 x 101"
+  },
+  "006_mustard_bottle": {
+    "original_id": 9,
+    "class": "Food Items",
+    "object_name": "French's Mustard bottle",
+    "mass": "603g",
+    "dimensions_mm": "50 x 85 x 175"
+  },
+  "007_tuna_fish_can": {
+    "original_id": 7,
+    "class": "Food Items",
+    "object_name": "Starkist Tuna Fish can",
+    "mass": "171g",
+    "dimensions_mm": "85 x 33"
+  },
+  "008_pudding_box": {
+    "original_id": 3,
+    "class": "Food Items",
+    "object_name": "Jell-O Chocolate Pudding box",
+    "mass": "187g",
+    "dimensions_mm": "35 x 110 x 89"
+  },
+  "009_gelatin_box": {
+    "original_id": 4,
+    "class": "Food Items",
+    "object_name": "Jell-O Strawberry Gelatin box",
+    "mass": "97g",
+    "dimensions_mm": "28 x 85 x 73"
+  },
+  "010_potted_meat_can": {
+    "original_id": 5,
+    "class": "Food Items",
+    "object_name": "Spam Potted Meat can",
+    "mass": "370g",
+    "dimensions_mm": "50 x 97 x 82"
+  },
+  "011_banana": {
+    "original_id": 11,
+    "class": "Food Items",
+    "object_name": "Plastic banana",
+    "mass": "66g",
+    "dimensions_mm": "36 x 190"
+  },
+  "012_strawberry": {
+    "original_id": 12,
+    "class": "Food Items",
+    "object_name": "Plastic strawberry",
+    "mass": "18g",
+    "dimensions_mm": "43.8 x 55"
+  },
+  "013_apple": {
+    "original_id": 13,
+    "class": "Food Items",
+    "object_name": "Plastic apple",
+    "mass": "68g",
+    "dimensions_mm": "75"
+  },
+  "014_lemon": {
+    "original_id": 14,
+    "class": "Food Items",
+    "object_name": "Plastic lemon",
+    "mass": "29g",
+    "dimensions_mm": "54 x 68"
+  },
+  "015_peach": {
+    "original_id": 15,
+    "class": "Food Items",
+    "object_name": "Plastic peach",
+    "mass": "33g",
+    "dimensions_mm": "59"
+  },
+  "016_pear": {
+    "original_id": 16,
+    "class": "Food Items",
+    "object_name": "Plastic pear",
+    "mass": "49g",
+    "dimensions_mm": "66.2 x 100"
+  },
+  "017_orange": {
+    "original_id": 17,
+    "class": "Food Items",
+    "object_name": "Plastic orange",
+    "mass": "47g",
+    "dimensions_mm": "73"
+  },
+  "018_plum": {
+    "original_id": 18,
+    "class": "Food Items",
+    "object_name": "Plastic plum",
+    "mass": "25g",
+    "dimensions_mm": "52"
+  },
+  "019_pitcher_base": {
+    "original_id": 22,
+    "class": "Kitchen Items",
+    "object_name": "Pitcher Base",
+    "mass": "178g",
+    "dimensions_mm": "108 x 235"
+  },
+  "020_pitcher_lid": {
+    "original_id": 23,
+    "class": "Kitchen Items",
+    "object_name": "Pitcher Lid",
+    "mass": "66g",
+    "dimensions_mm": "123 x 48"
+  },
+  "021_bleach_cleanser": {
+    "original_id": 20,
+    "class": "Kitchen Items",
+    "object_name": "Scrub Cleanser bottle",
+    "mass": "1131g",
+    "dimensions_mm": "250 x 98 x 65"
+  },
+  "022_windex_bottle": {
+    "original_id": 19,
+    "class": "Kitchen Items",
+    "object_name": "Windex Spray bottle",
+    "mass": "1022g",
+    "dimensions_mm": "80 x 105 x 270"
+  },
+  "023_wine_glass": {
+    "original_id": 30,
+    "class": "Kitchen Items",
+    "object_name": "Wine glass",
+    "mass": "133g",
+    "dimensions_mm": "89 x 137"
+  },
+  "024_bowl": {
+    "original_id": 25,
+    "class": "Kitchen Items",
+    "object_name": "Bowl",
+    "mass": "147g",
+    "dimensions_mm": "159 x 53"
+  },
+  "025_mug": {
+    "original_id": 31,
+    "class": "Kitchen Items",
+    "object_name": "Mug",
+    "mass": "118g",
+    "dimensions_mm": "80 x 82"
+  },
+  "026_sponge": {
+    "original_id": 21,
+    "class": "Kitchen Items",
+    "object_name": "Scotch Brite Dobie sponge",
+    "mass": "6.2g",
+    "dimensions_mm": "72 x 114 x 14"
+  },
+  "027_skillet": {
+    "original_id": 32,
+    "class": "Kitchen Items",
+    "object_name": "Skillet",
+    "mass": "950g",
+    "dimensions_mm": "270 x 25 x 30"
+  },
+  "028_skillet_lid": {
+    "original_id": 33,
+    "class": "Kitchen Items",
+    "object_name": "Skillet Lid",
+    "mass": "652g",
+    "dimensions_mm": "270 x 10 x 22"
+  },
+  "029_plate": {
+    "original_id": 24,
+    "class": "Kitchen Items",
+    "object_name": "Plate",
+    "mass": "279g",
+    "dimensions_mm": "258 x 24"
+  },
+  "030_fork": {
+    "original_id": 26,
+    "class": "Kitchen Items",
+    "object_name": "Fork",
+    "mass": "34g",
+    "dimensions_mm": "14 x 20 x 198"
+  },
+  "031_spoon": {
+    "original_id": 27,
+    "class": "Kitchen Items",
+    "object_name": "Spoon",
+    "mass": "30g",
+    "dimensions_mm": "14 x 20 x 195"
+  },
+  "032_knife": {
+    "original_id": 28,
+    "class": "Kitchen Items",
+    "object_name": "Knife",
+    "mass": "31g",
+    "dimensions_mm": "14 x 20 x 215"
+  },
+  "033_spatula": {
+    "original_id": 29,
+    "class": "Kitchen Items",
+    "object_name": "Spatula",
+    "mass": "51.5g",
+    "dimensions_mm": "83 x 35 x 350"
+  },
+  "035_power_drill": {
+    "original_id": 47,
+    "class": "Tool Items",
+    "object_name": "Power Drill",
+    "mass": "895g",
+    "dimensions_mm": "35 x 46 x 184"
+  },
+  "036_wood_block": {
+    "original_id": 45,
+    "class": "Tool Items",
+    "object_name": "Wood block",
+    "mass": "729g",
+    "dimensions_mm": "85 x 85 x 200"
+  },
+  "037_scissors": {
+    "original_id": 35,
+    "class": "Tool Items",
+    "object_name": "Scissors",
+    "mass": "82g",
+    "dimensions_mm": "87 x 200 x 14"
+  },
+  "038_padlock": {
+    "original_id": 38,
+    "class": "Tool Items",
+    "object_name": "Padlock & Keys",
+    "mass": "208g, 6g",
+    "dimensions_mm": "24 x 47 x 65 / 23 x 43 x 2.2"
+  },
+  "040_large_marker": {
+    "original_id": 36,
+    "class": "Tool Items",
+    "object_name": "Large marker",
+    "mass": "15.8g",
+    "dimensions_mm": "18 x 121"
+  },
+  "041_small_marker": {
+    "original_id": 37,
+    "class": "Tool Items",
+    "object_name": "Small marker",
+    "mass": "8.2g",
+    "dimensions_mm": "8 x 135"
+  },
+  "042_adjustable_wrench": {
+    "original_id": 44,
+    "class": "Tool Items",
+    "object_name": "Adjustable Wrench",
+    "mass": "252g",
+    "dimensions_mm": "5 x 55 x 205"
+  },
+  "043_phillips_screwdriver": {
+    "original_id": 42,
+    "class": "Tool Items",
+    "object_name": "Phillips Screwdriver",
+    "mass": "97g",
+    "dimensions_mm": "31 x 215"
+  },
+  "044_flat_screwdriver": {
+    "original_id": 43,
+    "class": "Tool Items",
+    "object_name": "Flat Screwdriver",
+    "mass": "98.4g",
+    "dimensions_mm": "31 x 215"
+  },
+  "048_hammer": {
+    "original_id": 39,
+    "class": "Tool Items",
+    "object_name": "Hammer",
+    "mass": "665g",
+    "dimensions_mm": "34 x 32 x 135"
+  },
+  "050_medium_clamp": {
+    "original_id": 46,
+    "class": "Tool Items",
+    "object_name": "Clamps",
+    "mass": "59g",
+    "dimensions_mm": "90 x 115 x 27"
+  },
+  "051_large_clamp": {
+    "original_id": 47,
+    "class": "Tool Items",
+    "object_name": "Clamps",
+    "mass": "125g",
+    "dimensions_mm": "125 x 165 x 32"
+  },
+  "052_extra_large_clamp": {
+    "original_id": 48,
+    "class": "Tool Items",
+    "object_name": "Clamps",
+    "mass": "202g",
+    "dimensions_mm": "165 x 213 x 37"
+  },
+  "053_mini_soccer_ball": {
+    "original_id": 49,
+    "class": "Shape Items",
+    "object_name": "Mini soccer ball",
+    "mass": "123g",
+    "dimensions_mm": "140"
+  },
+  "054_softball": {
+    "original_id": 50,
+    "class": "Shape Items",
+    "object_name": "Soft Ball",
+    "mass": "191g",
+    "dimensions_mm": "96"
+  },
+  "055_baseball": {
+    "original_id": 51,
+    "class": "Shape Items",
+    "object_name": "Baseball",
+    "mass": "138g",
+    "dimensions_mm": "80"
+  },
+  "056_tennis_ball": {
+    "original_id": 52,
+    "class": "Shape Items",
+    "object_name": "Tennis Ball",
+    "mass": "58g",
+    "dimensions_mm": "64.7"
+  },
+  "057_racquetball": {
+    "original_id": 53,
+    "class": "Shape Items",
+    "object_name": "Racquetball",
+    "mass": "41g",
+    "dimensions_mm": "55.3"
+  },
+  "058_golf_ball": {
+    "original_id": 54,
+    "class": "Shape Items",
+    "object_name": "Golf Ball",
+    "mass": "46g",
+    "dimensions_mm": "42.7"
+  },
+  "059_chain": {
+    "original_id": 61,
+    "class": "Shape Items",
+    "object_name": "Chain",
+    "mass": "100g",
+    "dimensions_mm": "2 x 4 x 130"
+  },
+  "061_foam_brick": {
+    "original_id": 57,
+    "class": "Shape Items",
+    "object_name": "Foam Brick",
+    "mass": "28g",
+    "dimensions_mm": "50 x 75 x 50"
+  },
+  "062_dice": {
+    "original_id": 58,
+    "class": "Shape Items",
+    "object_name": "Dice",
+    "mass": "5.2g",
+    "dimensions_mm": "16.2"
+  },
+  "065_cups_collection": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "[13, 14, 17, 19, 21, 26, 28, 31, 35, 38]g",
+    "dimensions_mm": "[55x60, 60x62, 65x64, 70x66, 75x68, 80x70, 85x72, 90x74, 95x76, 100x78]"
+  },
+  "065-a_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "13g",
+    "dimensions_mm": "55x60"
+  },
+  "065-b_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "14g",
+    "dimensions_mm": "60x62"
+  },
+  "065-c_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "17g",
+    "dimensions_mm": "65x64"
+  },
+  "065-d_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "19g",
+    "dimensions_mm": "70x66"
+  },
+  "065-e_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "21g",
+    "dimensions_mm": "75x68"
+  },
+  "065-f_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "26g",
+    "dimensions_mm": "80x70"
+  },
+  "065-g_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "28g",
+    "dimensions_mm": "85x72"
+  },
+  "065-h_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "31g",
+    "dimensions_mm": "90x74"
+  },
+  "065-i_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "35g",
+    "dimensions_mm": "95x76"
+  },
+  "065-j_cups": {
+    "original_id": 56,
+    "class": "Shape Items",
+    "object_name": "Cups",
+    "mass": "38g",
+    "dimensions_mm": "100x78"
+  },
+  "070-a_colored_wood_blocks": {
+    "original_id": 65,
+    "class": "Task Items",
+    "object_name": "Colored Wood Blocks",
+    "mass": "10.8g",
+    "dimensions_mm": "26"
+  },
+  "070-b_colored_wood_blocks": {
+    "original_id": 65,
+    "class": "Task Items",
+    "object_name": "Colored Wood Blocks",
+    "mass": "10.8g",
+    "dimensions_mm": "26"
+  },
+  "071_nine_hole_peg_test": {
+    "original_id": 66,
+    "class": "Task Items",
+    "object_name": "9-Peg-Hole Test",
+    "mass": "1435g",
+    "dimensions_mm": "1150 x 1200 x 1200"
+  },
+  "072-a_toy_airplane": {
+    "original_id": 67,
+    "class": "Task Items",
+    "object_name": "Toy Airplane",
+    "mass": "570g",
+    "dimensions_mm": "171 x 266 x 280"
+  },
+  "072-b_toy_airplane": {
+    "original_id": 67,
+    "class": "Task Items",
+    "object_name": "Toy Airplane",
+    "mass": "570g",
+    "dimensions_mm": "171 x 266 x 280"
+  },
+  "072-c_toy_airplane": {
+    "original_id": 67,
+    "class": "Task Items",
+    "object_name": "Toy Airplane",
+    "mass": "570g",
+    "dimensions_mm": "171 x 266 x 280"
+  },
+  "072-d_toy_airplane": {
+    "original_id": 67,
+    "class": "Task Items",
+    "object_name": "Toy Airplane",
+    "mass": "570g",
+    "dimensions_mm": "171 x 266 x 280"
+  },
+  "072-e_toy_airplane": {
+    "original_id": 67,
+    "class": "Task Items",
+    "object_name": "Toy Airplane",
+    "mass": "570g",
+    "dimensions_mm": "171 x 266 x 280"
+  },
+  "073-e_lego_duplo": {
+    "original_id": 68,
+    "class": "Task Items",
+    "object_name": "LEGO Duplo",
+    "mass": "30g",
+    "dimensions_mm": "16 x 9.5 x 5.5 (base)"
+  },
+  "075_magazine": {
+    "original_id": 69,
+    "class": "Task Items",
+    "object_name": "Magazine",
+    "mass": "73g",
+    "dimensions_mm": "256 x 200 x 1.6"
+  },
+  "076_timer": {
+    "original_id": 71,
+    "class": "Task Items",
+    "object_name": "Timer",
+    "mass": "101g",
+    "dimensions_mm": "8 x 8.5 x 4.5"
+  },
+  "077_rubiks_cube": {
+    "original_id": 62,
+    "class": "Shape Items",
+    "object_name": "Rubicks Cube",
+    "mass": "94g",
+    "dimensions_mm": "57 x 57 x 57"
+  },
+  "black_t_shirt": {
+    "original_id": 70,
+    "class": "Task Items",
+    "object_name": "Black t-shirt",
+    "mass": "105g",
+    "dimensions_mm": "736 x 736"
+  },
+  "bolt_and_nut": {
+    "original_id": 41,
+    "class": "Tool Items",
+    "object_name": "Bolt & nut",
+    "mass": "[5.9, 3.4]g",
+    "dimensions_mm": "[43 x 16, 8 x 16]"
+  },
+  "box_lid": {
+    "original_id": 64,
+    "class": "Task Items",
+    "object_name": "Box Lid",
+    "mass": "159g",
+    "dimensions_mm": "292 x 429 x 20"
+  },
+  "clear_box_x2": {
+    "original_id": 63,
+    "class": "Task Items",
+    "object_name": "Clear Box (x2)",
+    "mass": "302g",
+    "dimensions_mm": "292 x 429 x 149"
+  },
+  "credit_card_blank": {
+    "original_id": 48,
+    "class": "Tool Items",
+    "object_name": "Credit Card blank",
+    "mass": "5.2g",
+    "dimensions_mm": "54 x 85 x 1"
+  },
+  "footlocker": {
+    "original_id": 72,
+    "class": "Task Items",
+    "object_name": "Footlocker",
+    "mass": "3.7 kg",
+    "dimensions_mm": "31.13 x 17.5 x 13.88"
+  },
+  "marbles_collection": {
+    "original_id": 55,
+    "class": "Shape Items",
+    "object_name": "Marbles",
+    "mass": "N/A",
+    "dimensions_mm": "N/A"
+  },
+  "nails_collection": {
+    "original_id": 40,
+    "class": "Tool Items",
+    "object_name": "Nails",
+    "mass": "[2, 2.7, 4.8]g",
+    "dimensions_mm": "[4x25, 3x53, 4x63]"
+  },
+  "table_cloth": {
+    "original_id": 34,
+    "class": "Kitchen Items",
+    "object_name": "Table Cloth",
+    "mass": "1315g",
+    "dimensions_mm": "228 x 335"
+  },
+  "washers_collection": {
+    "original_id": 59,
+    "class": "Shape Items",
+    "object_name": "Washers (7 sizes)",
+    "mass": "[0.1, 0.7, 1.1, 3, 5.3, 19, 48]g",
+    "dimensions_mm": "[6.4, 10, 13.3, 18.8, 25.4, 37.3, 51]"
+  }
+}

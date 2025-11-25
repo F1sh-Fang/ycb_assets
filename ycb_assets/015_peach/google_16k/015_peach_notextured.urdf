@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="015_peach">
+  
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.028322" rpy="0 0 0"/>
+      <mass value="0.033"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.015510 -0.004278 0.000000" rpy="0.000000 -0.000000 0.152376"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.015510 -0.004278 0.000000" rpy="0.000000 -0.000000 0.152376"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="center_of_mass"/>
+
+  <link name="obb_center"/>
+
+  <joint name="base_to_com" type="fixed">
+    <parent link="base_link"/>
+    <child link="center_of_mass"/>
+    <origin xyz="0.000000 0.000000 0.028322" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_to_obb" type="fixed">
+    <parent link="base_link"/>
+    <child link="obb_center"/>
+    <origin xyz="-0.000431 0.000093 0.026309" rpy="0 0 0"/>
+  </joint>
+
+</robot>

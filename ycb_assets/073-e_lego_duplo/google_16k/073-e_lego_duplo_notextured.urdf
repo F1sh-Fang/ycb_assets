@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot name="073-e_lego_duplo">
+  
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.000000 0.000000 0.019947" rpy="0 0 0"/>
+      <mass value="0.03"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.042591 0.035702 0.000000" rpy="0.000000 -0.000000 -0.436640"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.042591 0.035702 0.000000" rpy="0.000000 -0.000000 -0.436640"/>
+      <geometry>
+        <mesh filename="textured_vhacd.obj"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="center_of_mass"/>
+
+  <link name="obb_center"/>
+
+  <joint name="base_to_com" type="fixed">
+    <parent link="base_link"/>
+    <child link="center_of_mass"/>
+    <origin xyz="0.000000 0.000000 0.019947" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_to_obb" type="fixed">
+    <parent link="base_link"/>
+    <child link="obb_center"/>
+    <origin xyz="0.000351 0.000270 0.021178" rpy="0 0 0"/>
+  </joint>
+
+</robot>
